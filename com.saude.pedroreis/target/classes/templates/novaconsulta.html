@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml"> 
+<body>
+    <form action="#" th:action="@{/consultas/salvar}" th:object="${consulta}" method="POST">
+       
+        <input type="hidden" th:field="*{id}"><br>
+        
+        <label for="">Medicos</label>
+        
+        <select th:field="*{medico}">
+            <option value="">Selecione o Médico</option>
+            <option th:each="medico : ${medicos}" th:value="${medico.id}" th:text="${medico.nome}"></option>
+        
+        </select>
+        <br>
+        
+        <label for="">Pacientes</label>
+        
+        <select th:field="*{paciente}">
+            <option value="">Selecione o Paciente</option>
+            <option th:each="paciente : ${pacientes}" th:value="${paciente.id}" th:text="${paciente.nome}"></option>
+        
+        </select><br>
+        
+        <label for="">Convênio</label>
+        
+        <input type="text" th:field="*{convenio}"><br>
+        
+        <label for="">Data</label>
+        
+        <input type="date" th:field="*{date}"><br>
+    
+    <button type="submit">Salvar</button>
+    </form>
+    
+    
+</body>
+</html>

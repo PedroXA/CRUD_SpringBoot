@@ -1,0 +1,32 @@
+<html>
+<html>
+<body>
+		<a href="especialidade/novaespecialidade">
+        				Nova Especialidade
+    	</a>
+    	<br>
+    	<br>
+     	<a href="http://localhost:8080">
+        				Voltar
+    	</a>
+    	<br>
+    	<br>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nome</td>
+                <td colspan="2">Ações</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="especialidades : ${especialidade}">
+                <td><span th:text="${especialidades.id}"></span></td>
+                <td><span th:text="${especialidades.nome}"></span></td> 
+                <td><a th:href="@{/especialidade/editar/{codigo} (codigo=${especialidades.id})}">Editar</a></td>
+                
+                <td><a th:href="@{/especialidade/excluir/{codigo} (codigo=${especialidades.id})}">Excluir</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>

@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml"> 
+<body>
+    <form action="#" th:action="@{/especialidade/salvar}" th:object="${especialidades}" method="POST">
+       
+        <input type="hidden" th:field="*{id}"><br>
+             
+        <label for="">Nome</label>
+        
+        <input type="text" th:field="*{nome}"><br>
+ 
+    <button type="submit">Salvar</button>
+    </form>
+    
+    
+</body>
+</html>

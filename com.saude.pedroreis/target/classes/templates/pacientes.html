@@ -1,0 +1,34 @@
+<html>
+<html>
+<body>
+    <a href="pacientes/novopaciente">
+        				Novo Paciente
+    </a>
+    <br>
+    <br>
+     <a href="http://localhost:8080">
+        				Voltar
+    </a>
+    <br>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nome</td>
+                <td>CPF</td>
+                <td colspan="2">Ações</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="pacientes : ${paciente}">
+                <td><span th:text="${pacientes.id}"></span></td>
+                <td><span th:text="${pacientes.nome}"></span></td> 
+                <td><span th:text="${pacientes.cpf}"></span></td> 
+                
+                <td><a th:href="@{/pacientes/editar/{codigo} (codigo=${pacientes.id})}">Editar</a></td>
+                <td><a th:href="@{/pacientes/excluir/{codigo} (codigo=${pacientes.id})}">Excluir</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>

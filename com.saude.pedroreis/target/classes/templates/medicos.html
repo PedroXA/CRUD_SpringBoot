@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<a href="medicos/novomedico">
+        				Novo Medico
+    	</a>
+    	<br>
+    	<br>
+     	<a href="http://localhost:8080">
+        				Voltar
+    	</a>
+    	<br>
+    	<br>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nome</td>
+                <td>CRM</td>
+                <td>Especialidade</td>
+                <td colspan="2">Ações</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="medico : ${medico}">
+                <td><span th:text="${medico.id}"></span></td>
+                <td><span th:text="${medico.nome}"></span></td>
+                <td><span th:text="${medico.crm}"></span></td>
+                <td>
+               		<table>
+               		 <tbody>
+               		 	<tr th:each="especialidades : ${medico.especialidade}">
+                			<span th:text="${especialidades.nome}" th:value="${especialidades.id}"></span> 
+                	 	</tr>
+                	  </tbody>	
+                	</table>
+                </td>
+                
+                
+                <td><a th:href="@{/medicos/editar/{codigo} (codigo=${medico.id})}">Editar</a></td>
+                
+                <td><a th:href="@{/medicos/excluir/{codigo} (codigo=${medico.id})}">Excluir</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>

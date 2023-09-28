@@ -1,0 +1,60 @@
+<html>
+<html>
+<body>
+		<a href="consultas/novaconsulta">
+        				Nova Consulta
+    	</a>
+    	<br>
+    	<br>
+     	<a href="http://localhost:8080">
+        				Voltar
+    	</a>
+    	<br>
+    	<br>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Convênio</td>
+                <td>Data</td>
+                <td>Medico</td>
+                <td>Paciente</td>
+                
+                
+                <td colspan="2">Ações</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="consultas : ${consulta}">
+                <td><span th:text="${consultas.id}"></span></td>
+                <td><span th:text="${consultas.convenio}"></span></td> 
+                <td><span th:text="${consultas.date}"></span></td> 
+                <td>
+               <table>
+               		 <tbody>
+               		 	<tr th:each="medico : ${consultas.medico}">
+             
+                			<span th:text="${medico.nome}"></span> 
+                	 	</tr>
+                	  </tbody>	
+                	</table>
+               </td> 
+               <td>
+               		<table>
+               		 	<tbody>
+               		 		<tr th:each="paciente : ${consultas.paciente}">
+                			 	<td>
+   
+                			 		<span th:text="${paciente.nome}"></span>
+                			 	</td> 
+                	 		</tr>
+                	  	</tbody>	
+                	</table>
+          		</td>
+                <td><a th:href="@{/consultas/editar/{codigo} (codigo=${consultas.id})}">Editar</a></td>
+                
+                <td><a th:href="@{/consultas/excluir/{codigo} (codigo=${consultas.id})}">Excluir</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>

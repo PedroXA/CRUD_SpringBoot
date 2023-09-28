@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml"> 
+<body>
+    <form action="#" th:action="@{/pacientes/salvar}" th:object="${paciente}" method="POST">
+       
+        <input type="hidden" th:field="*{id}"><br>
+  
+        <label for="">Nome</label>
+        
+        <input type="text" th:field="*{nome}"><br>
+        
+        <label for="">CPF</label>
+        
+        <input type="text" th:field="*{cpf}"><br>
+    
+    <button type="submit">Salvar</button>
+    </form>
+    
+    
+</body>
+</html>
