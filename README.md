@@ -1,6 +1,6 @@
 # Projeto de CRUD em Java Spring
 
-Este é um projeto de exemplo de um CRUD (Create, Read, Update, Delete) em Java Spring, desenvolvido como parte de um projeto em sala de aula. O projeto utiliza as seguintes tecnologias:
+Este é um projeto de exemplo de um CRUD (Create, Read, Update, Delete) em Java Spring, desenvolvido como parte de uma atividade em sala de aula. O projeto utiliza as seguintes tecnologias:
 
 - **Java Spring**: [Link para download](https://spring.io/projects/spring-framework)
 - **H2 Database**: [Link para download](https://www.h2database.com/html/main.html)
