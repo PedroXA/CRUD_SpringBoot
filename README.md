@@ -39,10 +39,13 @@ Para executar o projeto em sua máquina, siga estas etapas:
 ```bash
 cd seu-projeto
 ```
+
 Em seguida, execute o projeto usando o Maven:
+
 ```bash
 mvn spring-boot:run
 ```
+
 O aplicativo estará acessível em http://localhost:8080 no seu navegador.
 
 Banco de Dados
