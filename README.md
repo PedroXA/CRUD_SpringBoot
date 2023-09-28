@@ -29,8 +29,9 @@ Siga estas etapas para executar o projeto em sua máquina:
 
 1. Clone o repositório para sua máquina:
 
-   ```bash
-   git clone https://github.com/PedroXA/CRUD-Java-Spring-Boot
+```bash
+git clone https://github.com/PedroXA/CRUD-Java-Spring-Boot
+```
 
 ## Executando o Projeto
 
