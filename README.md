@@ -48,11 +48,11 @@ mvn spring-boot:run
 
 O aplicativo estará acessível em http://localhost:8080 no seu navegador.
 
-Banco de Dados
+## Banco de Dados
 Este projeto utiliza o H2 Database em modo de armazenamento em memória. Isso significa que os dados serão perdidos quando o aplicativo for encerrado. Você pode acessar o console de administração do H2 Database em http://localhost:8080/h2-console (as credenciais podem ser configuradas no arquivo application.properties).
 
-Contribuições
+## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar este projeto.
 
-Licença
+## Licença
 Este projeto é licenciado sob a Licença MIT.
