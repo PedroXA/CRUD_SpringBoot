@@ -30,14 +30,14 @@ Siga estas etapas para executar o projeto em sua máquina:
 1. Clone o repositório para sua máquina:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone https://github.com/PedroXA/CRUD-Java-Spring-Boot
 
 ## Executando o Projeto
 
 Para executar o projeto em sua máquina, siga estas etapas:
 
 ```bash
-cd seu-projeto
+cd nome-do-projeto
 ```
 
 Em seguida, execute o projeto usando o Maven:
