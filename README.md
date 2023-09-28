@@ -31,3 +31,25 @@ Siga estas etapas para executar o projeto em sua máquina:
 
    ```bash
    git clone https://github.com/seu-usuario/seu-projeto.git
+
+## Executando o Projeto
+
+Para executar o projeto em sua máquina, siga estas etapas:
+
+```bash
+cd seu-projeto
+
+Em seguida, execute o projeto usando o Maven:
+mvn spring-boot:run
+
+
+O aplicativo estará acessível em http://localhost:8080 no seu navegador.
+
+Banco de Dados
+Este projeto utiliza o H2 Database em modo de armazenamento em memória. Isso significa que os dados serão perdidos quando o aplicativo for encerrado. Você pode acessar o console de administração do H2 Database em http://localhost:8080/h2-console (as credenciais podem ser configuradas no arquivo application.properties).
+
+Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar este projeto.
+
+Licença
+Este projeto é licenciado sob a Licença MIT.
